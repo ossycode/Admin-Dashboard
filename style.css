@@ -15,17 +15,20 @@
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
-.container div {
-    padding: 10px;
+/* .container div {
+    padding: 5px;
     color: white;
-} 
+}  */
 
 .header{
 background-color: #f8fafc;
 grid-column: 2 / 4;
 display: grid;
 grid-template-columns: 2fr 1fr;
-grid-template-rows: 1fr 1fr;
+}
+
+.header div{
+    padding: 10px;
 }
 
 .user-greeting{
@@ -89,12 +92,11 @@ display: flex;
  background-color: #0284c7;
  display: grid;
  grid-template-rows: 1fr 7fr;
+ 
 }
 
-.main{
-/* grid-column: 2/ 4; */
-grid-row: 2 / 4;
-background-color: #7dd3fc;
+.sidebar div{
+    padding: 10px;
 }
 
 .branding{
@@ -103,7 +105,9 @@ background-color: #7dd3fc;
     font-size: 1.5rem;
     color: white;
 }
-
+.branding h3{
+    color: white;
+}
 .sidebar a{
     font-size: 1.2rem;
     font-weight: bold;
@@ -118,4 +122,110 @@ background-color: #7dd3fc;
 .sidebar svg{
     margin-right: 10px;
     fill: white;
+}
+
+.main{
+    /* grid-column: 2/ 4; */
+    grid-row: 2 / 4;
+    background-color: #cbd5e1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    }
+
+
+
+.projects{
+grid-row: 1 / 4;
+display: grid;
+padding: 15px;
+}
+
+.projects div{
+    padding: 10px;
+}
+
+.project-cards{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 35px;
+
+}
+
+.cards{
+    height: 210px; 
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid #f59e0b;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    padding: 8px;
+    overflow: auto;
+}
+
+.projects h2{
+ margin-left: 12px;
+ padding: 5px;
+}
+
+.main h1, h2, h3, h4, p{
+    color:black;
+}
+.project-icons{
+    display: flex;
+   justify-content: right;
+}
+.project-icons a{
+    margin: 10px;
+}
+.announcements{
+    grid-row: 1/2;
+    padding: 5px;
+    margin: 5px;
+}
+
+.announcements div{
+padding: 12px;
+}
+.announcements h2{
+    padding: 12px;
+
+}
+
+.message-section{
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    overflow: auto;
+   
+}
+
+.message-item{
+    padding: 25px;
+   }
+
+.message-item:not(.last){
+ border-bottom: 1px solid rgb(212, 211, 211);
+}
+.trending{
+    grid-row: 2/4;
+    padding: 5px;
+    margin: 5px;
+
+}
+.trending h2{
+    margin-bottom: 5px;
+}
+
+.trending-board{
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    overflow: auto;
+}
+
+.trending-item{
+    display: flex;
+    padding: 10px;
 }
